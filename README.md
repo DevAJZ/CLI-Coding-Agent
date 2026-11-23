@@ -1,6 +1,6 @@
 # CLI Coding Agent
 
-A Python command-line agent that can inspect a codebase, edit a file, and run its tests in response to a plain-English request. I built it as a Boot.dev project to learn how a language model goes from suggesting a change to making one and checking the result.
+A Python command-line agent that can inspect a codebase, edit a file, and run its tests in response to a plain-English request. I built it to learn how a language model goes from suggesting a change to making one and checking the result.
 
 ## A bug the agent fixed
 
