@@ -2,18 +2,9 @@
 
 A Python command-line agent that can inspect a codebase, edit a file, and run its tests in response to a plain-English request. I built it to learn how a language model goes from suggesting a change to making one and checking the result.
 
-## A bug the agent fixed
+## The agent can fix your coding bugs
+During development, the agent can fix your coding bugs by telling him which bugs you got, and he will scan the whole working directory searching for bugs and fixes them.
 
-During development, the sample calculator evaluated `3 + 7 * 2` as `20`. Its precedence table ranked addition above multiplication, so the evaluator added `3 + 7` first. I gave the agent the failing expression. It corrected the table, and the calculator now returns `17`.
-
-You can verify the result locally without an API key:
-
-```sh
-uv run calculator/main.py "3 + 7 * 2"
-uv run calculator/tests.py
-```
-
-The first command prints the expression and result as JSON. The second runs nine unit tests covering arithmetic, operator precedence, empty input, and malformed expressions. The [evaluator](calculator/pkg/calculator.py) and [tests](calculator/tests.py) show how the fix works.
 
 ## Four handwritten Python tools
 
